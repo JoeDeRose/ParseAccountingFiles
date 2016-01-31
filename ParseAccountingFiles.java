@@ -6,7 +6,7 @@ import java.util.*;
 
 class ParseAccountingFiles {
 	
-	static boolean debugOutput = false;
+	static boolean debugOutput = true;
 	
 	private final String sourcePath = "C:/Users/Joe DeRose/Desktop";
 	private final String targetPath = "C:/Users/Joe DeRose/Documents/Joe's Personal Stuff/Access/Linked Tables";
@@ -43,10 +43,6 @@ class ParseAccountingFiles {
 			}
 		}
 		ParseAccountingFiles.printDebugText( 1 );
-		
-		// Example for friendly names. To be actualized in ProcessXxx
-		FriendlyNames fn = new FriendlyNames();
-		System.out.println( fn.getFriendlyName( "5588" ) );
 	}
 	
 	public String getSourcePath() {
