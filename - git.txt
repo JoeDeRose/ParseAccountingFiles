@@ -1,0 +1,6 @@
+cd "C:\Users\Joe DeRose\workspace\ParseAccountingFiles\src\us\joederose\ParseAccountingFiles"
+git init
+# git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/JoeDeRose/ParseAccountingFiles.git
+git push -u origin master
