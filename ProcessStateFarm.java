@@ -10,7 +10,7 @@ class ProcessStateFarm extends ProcessXxx {
 		);
 		content = regexFriendlyReplace(
 			content,
-			"LEWIS JOSEPH DEROS ACCOUNT # XXXXXXXXX(\\d{4}) AT EXT BANK ABA # \\w{9}",
+			"LEWIS JOSEPH DEROS ACCOUNT # X{8,9}(\\d{4}) AT EXT BANK ABA # \\w{9}",
 			"Replace account identifier with friendly reference"
 		);
 		content = regexReplace(

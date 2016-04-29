@@ -6,7 +6,11 @@ import java.util.*;
 
 class ParseAccountingFiles {
 	
-	static boolean debugOutput = true;
+	/* Make debugOutput true to
+	 * (1) Open the results in the console.
+	 * (2) Leave the import file in place (i.e., don't delete after processing).
+	 */
+	static boolean debugOutput = false;
 	
 	private final String sourcePath = "C:/Users/Joe DeRose/Desktop";
 	private final String targetPath = "C:/Users/Joe DeRose/Documents/Joe's Personal Stuff/Access/Linked Tables";
@@ -36,7 +40,9 @@ class ParseAccountingFiles {
 					// Delete the source file:
 					paf.deleteSourceFile( sourceFile );
 					// Display confirmation:
+					System.out.println( "----------------------------------------------------------------------");
 					System.out.println( "\"" + fileName.getSourceFile() + "\" has been processed." );
+					System.out.println( "----------------------------------------------------------------------");
 				}
 			} else {
 				ParseAccountingFiles.printDebugText( 0, "File NOT found: " + sourceFile );
